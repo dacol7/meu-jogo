@@ -1,39 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f2f5;
+    background-color: #000000; /* Fundo Preto */
+    color: #ffffff;
     margin: 0;
 }
 
 .container {
     text-align: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #1a1a1a; /* Cinza bem escuro para o card */
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 500px;
 }
 
+h1 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/* Placar */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    background: #262626;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.score-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff88; /* Verde para destacar os números */
+}
+
+/* Botões */
 button {
-    font-size: 1.2rem;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 12px 24px;
     margin: 10px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    transition: 0.3s;
+    border-radius: 8px;
+    background-color: #d1d1d1; /* Cinza Claro solicitado */
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
 }
 
 #result {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1.1rem;
+    margin-top: 30px;
+    min-height: 50px;
+    font-size: 1.2rem;
+    color: #e0e0e0;
 }

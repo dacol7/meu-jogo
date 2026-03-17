@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpô</title>
+    <title>JOKENPÔ THE FINAL GAME</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Pedra, Papel ou Tesoura?</h1>
-        <div class="choices">
-            <button onclick="play('pedra')">🪨 Pedra</button>
-            <button onclick="play('papel')">📄 Papel</button>
-            <button onclick="play('tesoura')">✂️ Tesoura</button>
+        <h1>JOKENPÔ THE FINAL GAME</h1>
+        
+        <div class="score-board">
+            <div class="score-item">
+                <span class="label">Vitórias</span>
+                <span id="wins" class="number">0</span>
+            </div>
+            <div class="score-item">
+                <span class="label">Derrotas</span>
+                <span id="losses" class="number">0</span>
+            </div>
         </div>
+
+        <div class="choices">
+            <button onclick="play('pedra')">🪨 </button>
+            <button onclick="play('papel')">📄 </button>
+            <button onclick="play('tesoura')">✂️ </button>
+        </div>
+
         <div id="result">
-            <p>Escolha uma opção para começar!</p>
+            <p>Faça sua jogada!</p>
         </div>
     </div>
     <script src="script.js"></script>
